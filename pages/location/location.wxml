@@ -1,0 +1,5 @@
+<view class="classname">
+<button  bindtap="getLocation">获取位置</button>
+<button  bindtap="getSetting">getsetting</button>
+<button  bindtap="openSetting">opensetting</button>
+</view>
