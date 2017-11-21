@@ -1,0 +1,9 @@
+<!--component/img/img.wxml-->
+<view class="img_container">
+  <view>
+    <image src="{{imgUrl}}" class='img_img' bindtap="handleClickImg"></image>
+  </view>
+  <view class='img_title'>
+    <text style='margin-right:20px'>{{title}}</text>
+  </view>
+</view>

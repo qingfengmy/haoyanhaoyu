@@ -1,35 +1,78 @@
-import marquee from '../component/marquee/marquee.js';
+import { getGankIndex } from '../../network/api.js';
+import { getCurrentDate, getYesterday, getCurrentDateFormat } from '../../utils/getDate.js';
 
-//index.js
-//获取应用实例
-var app = getApp()
-var options = Object.assign(marquee, {
+Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    marquee: { text: '你好，中国！hello,world!' }
-  },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function (userInfo) {
-      //更新数据
-      that.setData({
-        userInfo: userInfo
-      })
-    })
 
-    const str = this.data.marquee.text;
-    const width = this.getWidth(str);
-    console.log('width',width);
-    this.setData({ [`${'marquee'}.width`]: width });
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    this.getGankIndex(new Date());
+  },
+
+  getGankIndex(date) {
+    getGankIndex(getCurrentDate(date)).then(res => {
+      console.log('res', res);
+      if (res.category && res.category.length > 0) {
+        this.setData({ ...res, title: getCurrentDateFormat(date), imgUrl: res.results['福利'][0].url });
+      } else {
+        this.getGankIndex(getYesterday(date));
+      }
+    });
+  },
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
   }
-});
-Page(options);
+})

@@ -1,12 +1,10 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <include src="../component/marquee/marquee.wxml" />
-  
+  <!-- 以下是对一个自定义组件的引用 -->
+  <customimg title="{{title}}" imgUrl="{{imgUrl}}" name="before" />
+
+  <indexitem gankType="Android" gankList="{{results.Android}}" wx:if="{{results.Android}}" />
+  <indexitem gankType="iOS" gankList="{{results.iOS}}" wx:if="{{results.iOS}}" />
+  <indexitem gankType="休息视频" gankList="{{results['休息视频']}}" wx:if="{{results['休息视频']}}" />
+  <indexitem gankType="前端" gankList="{{results['前端']}}" wx:if="{{results['前端']}}" />
 </view>

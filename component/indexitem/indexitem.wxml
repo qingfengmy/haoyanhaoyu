@@ -1,0 +1,14 @@
+<view class='indexitem-container'>
+  <view class='indexitem-header'>
+    <image class='indexitem-header-avatar'src="{{icon}}" />
+    <text class='indexitem-header-title'>{{gankType}}</text>
+  </view>
+
+  <view class='indexitem-content' wx:for="{{gankList}}" data-url='{{item.url}}' bindtap='handleClickUrl'>
+    <view class='indexitem-content-author'>
+      <image class='indexitem-content-author-img' src="/images/icon/ic_author.png"/>
+      <text class='indexitem-content-author-name'> {{item.who||'null'}}</text>
+    </view>
+    <text class='indexitem-content-desc'>{{item.desc}}</text>
+  </view>
+</view>

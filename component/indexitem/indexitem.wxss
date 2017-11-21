@@ -1,0 +1,42 @@
+/* component/indexitem/indexitem.wxss */
+
+.indexitem-container {
+  border-bottom: solid #f8f8f8 1px;
+  padding: 25rpx;
+  background: #fff;
+  width: 700rpx;
+}
+
+.indexitem-header {
+  display: flex;
+  align-items: center;
+  color: #4fd2be;
+}
+
+.indexitem-header-avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.indexitem-content-author {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.indexitem-content-author-img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.indexitem-content-author-name {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.indexitem-content-desc {
+  font-size: 14px;
+  color: #010101;
+}

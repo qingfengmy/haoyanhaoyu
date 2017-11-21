@@ -14,3 +14,9 @@ export default {
     return this.getWidth()/10;
   }
 }
+
+
+// const str = this.data.marquee.text;
+// const width = this.getWidth(str);
+// console.log('width', width);
+// this.setData({ [`${'marquee'}.width`]: width });
