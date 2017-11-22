@@ -1,0 +1,4 @@
+<!--pages/postgank/postgank.wxml-->
+<view>
+  <gankform/>
+</view>

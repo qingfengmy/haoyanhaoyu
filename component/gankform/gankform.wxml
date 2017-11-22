@@ -1,0 +1,56 @@
+<form bindsubmit="formSubmit" bindreset="formReset" class='section-container'>
+  <view class="section-row">
+    <view class="section__title">测试</view>
+    <switch name="debug" />
+  </view>
+  <view class="section-column">
+    <view class="section__title">url地址</view>
+    <input placeholder-style='fontsize:14px;' name="url" placeholder="please input here" class='section-input' />
+  </view>
+  <view class="section-column">
+    <view class="section__title">描述</view>
+    <input placeholder-style='fontsize:14px;' name="desc" placeholder="please input here" class='section-input' />
+  </view>
+  <view class="section-column">
+    <view class="section__title">提交者</view>
+    <input placeholder-style='fontsize:14px;' name="who" placeholder="please input here" class='section-input' />
+  </view>
+  <view class="section-row">
+    <view class="section__title">类型</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker" class="section__picker">
+        {{index==-1?'请选择类型':array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section-column">
+    <view class="section__title">推荐指数</view>
+    <slider name="score" show-value></slider>
+  </view>
+  <view class="section-column">
+    <view class="section__title">性别</view>
+    <radio-group name="gender" class="section-value">
+      <label class='section-value-item'>
+        <radio value="1" />男</label>
+      <label class='section-value-item'>
+        <radio value="0" />女</label>
+    </radio-group>
+  </view>
+  <view class="section-column">
+    <view class="section__title">擅长语言</view>
+    <checkbox-group name="language" class="section-value">
+      <label class='section-value-item'>
+        <checkbox value="javascript" />javascrip</label>
+      <label class='section-value-item'>
+        <checkbox value="java" />java</label>
+      <label class='section-value-item'>
+        <checkbox value="ios" />ios</label>
+      <label class='section-value-item'>
+        <checkbox value="php" />php</label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>

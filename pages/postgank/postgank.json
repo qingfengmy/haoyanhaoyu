@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "gankform": "/component/gankform/gankform"
+  }
+}

@@ -1,0 +1,55 @@
+/* component/gankform/gankform.wxss */
+
+.section-container {
+  display: flex;
+  padding: 20rpx;
+}
+
+.section-row {
+  display: flex;
+  border-bottom: solid #f8f8f8 1px;
+  padding: 10rpx 0;
+  align-items: center;
+  width: 710rpx;
+  min-height: 90rpx;
+}
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid #f8f8f8 1px;
+  width: 690rpx;
+  padding: 10rpx 0;
+  min-height: 120rpx;
+}
+
+.section__title {
+  margin-right: 10rpx;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.section-input {
+  margin-top: 10rpx;
+}
+
+.section-value {
+  margin-top: 10rpx;
+  font-size: 14px;
+}
+
+.section-value-item {
+  margin-right: 10rpx;
+}
+
+.btn-area {
+  margin-top: 50rpx;
+}
+
+.btn-area button {
+  margin-top: 10rpx;
+}
+
+.section__picker {
+  font-size: 14px;
+}
