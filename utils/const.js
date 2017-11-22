@@ -1,3 +1,3 @@
 export default{
-  endPoint:'http://gank.io/api'
+  endPoint:'https://gank.io/api'
 };

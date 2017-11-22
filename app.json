@@ -4,7 +4,8 @@
     "pages/ganktype/ganktype",
     "pages/logs/logs",
     "pages/webview/webview",
-    "pages/postgank/postgank"
+    "pages/postgank/postgank",
+    "pages/gankhistory/gankhistory"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,6 +30,12 @@
         "text": "分类",
         "iconPath": "images/tab/ic_type_default.png",
         "selectedIconPath": "images/tab/ic_type_select.png"
+      },
+      {
+        "pagePath": "pages/gankhistory/gankhistory",
+        "text": "历史",
+        "iconPath": "images/tab/ic_history_default.png",
+        "selectedIconPath": "images/tab/ic_history_select.png"
       },
       {
         "pagePath": "pages/postgank/postgank",
