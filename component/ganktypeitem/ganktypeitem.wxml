@@ -1,0 +1,4 @@
+<view class='container'>
+  <image class='icon' src="{{icon}}"/>
+  <text class='name'>{{name}}</text>
+</view>
