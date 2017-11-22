@@ -1,6 +1,6 @@
 <view class='indexitem-container'>
   <view class='indexitem-header'>
-    <image class='indexitem-header-avatar'src="{{icon}}" />
+    <image mode='aspectFill' class='indexitem-header-avatar'src="{{icon}}" />
     <text class='indexitem-header-title'>{{gankType}}</text>
   </view>
 
