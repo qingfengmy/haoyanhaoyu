@@ -27,7 +27,7 @@
       },
       {
         "pagePath": "pages/ganktype/ganktype",
-        "text": "分类",
+        "text": "发现",
         "iconPath": "images/tab/ic_type_default.png",
         "selectedIconPath": "images/tab/ic_type_select.png"
       },
