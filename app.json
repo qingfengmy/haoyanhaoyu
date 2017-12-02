@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/webview/webview",
     "pages/postgank/postgank",
-    "pages/gankhistory/gankhistory"
+    "pages/gankhistory/gankhistory",
+    "pages/taghistory/taghistory"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,7 +33,7 @@
         "selectedIconPath": "images/tab/ic_type_select.png"
       },
       {
-        "pagePath": "pages/gankhistory/gankhistory",
+        "pagePath": "pages/taghistory/taghistory",
         "text": "历史",
         "iconPath": "images/tab/ic_history_default.png",
         "selectedIconPath": "images/tab/ic_history_select.png"

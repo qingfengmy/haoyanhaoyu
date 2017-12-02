@@ -45,11 +45,14 @@ Component({
    */
   methods: {
     handleClickUrl(e) {
+      wx.showToast({
+        title: '暂未实现',
+      })
       // 跳webview页面
       console.log(e);
-      wx.navigateTo({
-        url: '/pages/webview/webview?url=' + encodeURI(e.currentTarget.dataset.url),
-      })
+      // wx.navigateTo({
+      //   url: '/pages/webview/webview?url=' + encodeURI(e.currentTarget.dataset.url),
+      // })
     }
   }
 })

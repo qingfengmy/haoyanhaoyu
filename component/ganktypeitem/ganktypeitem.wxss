@@ -4,13 +4,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 160rpx;
+  margin-bottom: 5px;
 }
 
 .icon {
-  width: 64rpx;
-  height: 64rpx;
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+  margin: 5px;
 }
 
 .name {
   color: #010101;
+  font-size: 24rpx;
 }

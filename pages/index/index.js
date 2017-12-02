@@ -18,13 +18,24 @@ Page({
   },
 
   getGankIndex(date) {
+    wx.showLoading({
+      title: '加载中',
+    })
     getGankIndex(getCurrentDate(date)).then(res => {
       console.log('res', res);
+      wx.hideLoading();
+      wx.stopPullDownRefresh();
       if (res.category && res.category.length > 0) {
         this.setData({ ...res, title: getCurrentDateFormat(date), imgUrl: res.results['福利'][0].url });
       } else {
         this.getGankIndex(getYesterday(date));
       }
+    }).catch(err => {
+      wx.hideLoading();
+      wx.stopPullDownRefresh();
+      wx.showToast({
+        title: '出错了',
+      })
     });
   },
   /**
@@ -59,7 +70,8 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log('onPullDownRefresh');
+    this.getGankIndex(new Date());
   },
 
   /**

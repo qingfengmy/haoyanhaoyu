@@ -1,2 +1,6 @@
-<!--pages/gankhistory/gankhistory.wxml-->
-<text>pages/gankhistory/gankhistory.wxml</text>
+<view>
+  <view class='historyListContainer'>
+    <history-item history="{{item}}" wx:for="{{historyList}}" />
+  </view>
+  <loadmore loadmore="{{loadmore}}" text="加载中。。。" />
+</view>

@@ -17,6 +17,7 @@
   width: 32px;
   height: 32px;
   margin-right: 10px;
+  border-radius: 16px;
 }
 
 .indexitem-content-author {
@@ -26,8 +27,8 @@
 }
 
 .indexitem-content-author-img {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   margin-right: 10px;
 }
 

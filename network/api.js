@@ -30,7 +30,17 @@ function getGankIndex(data = {}) {
   const { year, month, day } = data;
   return get(`${endPoint}/day/${year}/${month}/${day}`);
 }
+// 随机数据
+function getGankRandom() {
+  return get(`${endPoint}/random/data/all/20`);
+};
+// 历史数据
+function getGankHistory(data = {}) {
+  console.log('getGankHistory',data);
+  const { type='all', pageSize=20, pageNo=1 } = data;
+  return get(`${endPoint}/data/${type}/${pageSize}/${pageNo}`);
+};
 
 module.exports = {
-  getGankIndex,
+  getGankIndex, getGankRandom, getGankHistory,
 };

@@ -28,8 +28,8 @@ Component({
     handleClickImg() {
       console.log('this.data',this.data);
       wx.previewImage({
-        current: this.properties.imgUrl, // 当前显示图片的http链接
-        urls: [this.properties.imgUrl] // 需要预览的图片http链接列表
+        current: this.data.imgUrl, // 当前显示图片的http链接
+        urls: [this.data.imgUrl] // 需要预览的图片http链接列表
       })
     }
   }

@@ -1,7 +1,7 @@
 {
 	"description": "项目配置文件。",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -27,6 +27,12 @@
 					"id": -1,
 					"name": "postgank",
 					"pathName": "pages/postgank/postgank",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "gankhistory",
+					"pathName": "pages/gankhistory/gankhistory",
 					"query": ""
 				}
 			]

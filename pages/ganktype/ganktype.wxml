@@ -1,4 +1,11 @@
 <view>
-  <!-- 以下是对一个自定义组件的引用 -->
-  <component-tag-name inner-text="Some text">aaa</component-tag-name>
+  <view class='gankTypeContainer'>
+    <!-- 以下是对一个自定义组件的引用 -->
+    <gank-type-item wx:for="{{types}}" name="{{item.name}}" />
+  </view>
+  <view class='randomListContainer'>
+    <view class='randomTitle'>随机干货</view>
+    <history-item history="{{item}}" wx:for="{{randomList}}" />
+  </view>
+  <loadmore loadmore="{{loadmore}}" text="加载中。。。" />
 </view>

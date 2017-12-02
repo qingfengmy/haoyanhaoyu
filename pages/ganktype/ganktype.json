@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "component-tag-name": "/component/slot/slot"
+    "gank-type-item": "/component/ganktypeitem/ganktypeitem",
+    "loadmore":"/component/loadmore/loadmore",
+    "history-item":"/component/historyitem/historyitem"
   }
 }

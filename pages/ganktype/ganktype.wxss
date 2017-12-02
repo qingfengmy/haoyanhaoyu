@@ -1,1 +1,15 @@
 /* pages/ganktype/ganktype.wxss */
+
+.gankTypeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.randomTitle {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 14px;
+}
