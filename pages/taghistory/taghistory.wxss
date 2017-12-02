@@ -1,0 +1,5 @@
+/* pages/gankhistory/gankhistory.wxss */
+.historyListContainer{
+  display: flex;
+  flex-direction: column;
+}

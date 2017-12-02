@@ -1,0 +1,14 @@
+<view class='randomItem' bindtap='clickItem'>
+  <image class='randomImg' src='{{history.images?history.images[0]:"/images/icon/ic_default.png"}}'></image>
+  <view class='random_right'>
+    <view class='itemTitle'>{{history.desc}}</view>
+    <view class='itemType'>
+      <view class='itemAuthor'>
+        <image style='width:12px;height:12px' src="/images/icon/ic_author.png" />
+        <text> {{history.who||'null'}}</text>
+      </view>
+      <view>{{history.type}}</view>
+    </view>
+    <view class='itemDate'>{{history.publishedAt}}</view>
+  </view>
+</view>

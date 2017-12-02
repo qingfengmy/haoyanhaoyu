@@ -1,0 +1,8 @@
+/* component/loadmore/loadmore.wxss */
+.loadmore{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "loadmore": "/component/loadmore/loadmore",
+    "history-item": "/component/historyitem/historyitem"
+  }
+}
