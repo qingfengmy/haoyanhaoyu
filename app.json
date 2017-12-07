@@ -6,7 +6,8 @@
     "pages/webview/webview",
     "pages/postgank/postgank",
     "pages/gankhistory/gankhistory",
-    "pages/taghistory/taghistory"
+    "pages/taghistory/taghistory",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -43,6 +44,12 @@
         "text": "提交干货",
         "iconPath": "images/tab/ic_post_default.png",
         "selectedIconPath": "images/tab/ic_post_select.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/tab/ic_index_default.png",
+        "selectedIconPath": "images/tab/ic_index_select.png"
       }
     ]
   },
