@@ -1,0 +1,59 @@
+/* pages/about/about.wxss */
+
+.container {
+  background: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.portraitContainer {
+  width: 750rpx;
+  height: 500rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.portbackground {
+  filter: blur(10px);
+  width: 750rpx;
+  height: 500rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  align-items: center;
+}
+
+.avatar {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+}
+
+.nickName {
+  color: #fff;
+  margin: 5px;
+}
+
+.addressContainer {
+  margin-top: 20px;
+  background: #fff;
+  width: 750rpx;
+}
+
+.address {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #01db3e;
+}

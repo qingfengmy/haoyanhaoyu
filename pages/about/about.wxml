@@ -1,0 +1,13 @@
+<!--pages/about/about.wxml-->
+<view class='container'>
+  <view class='portraitContainer'>
+    <image class='portbackground' src="{{userInfo.avatarUrl||defaultAvatar}}"></image>
+    <view class='user'>
+      <image class='avatar' src="{{userInfo.avatarUrl||defaultAvatar}}"></image>
+      <text class='nickName'>{{userInfo.nickName||defaultNickName}}</text>
+    </view>
+  </view>
+  <view class='addressContainer'>
+    <view class='address'>{{userInfo.country}}/{{userInfo.province}}/{{userInfo.city}}</view>
+  </view>
+</view>
