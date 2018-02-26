@@ -1,0 +1,1 @@
+<live-player src="http://hls3a.douyucdn.cn/live/854503ryuAp5Frc9_550/playlist.m3u8?wsSecret=7a143e1918b8ddfd1d2373d41d68130d&wsTime=1516955016&ct=cpn-wxapi" mode="RTC" autoplay bind:statechange="statechange" bind:error="error" style="width: 375px; height: 255px;" />
