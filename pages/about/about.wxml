@@ -11,8 +11,10 @@
     <view class='address'>{{userInfo.country}}/{{userInfo.province}}/{{userInfo.city}}</view>
   </view>
   <navigator url="/pages/live/live" hover-class="navigator-hover">
-  <view class='addressContainer'>
-    <view class='address'>直播</view>
-  </view>
+    <view class='addressContainer'>
+      <view class='address'>直播</view>
+    </view>
   </navigator>
+  <view class='scantext'>{{result}}</view>
+  <button bindtap='scancode'>扫码</button>
 </view>

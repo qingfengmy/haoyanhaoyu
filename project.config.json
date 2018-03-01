@@ -20,6 +20,9 @@
 			"current": -1,
 			"list": []
 		},
+		"game": {
+			"list": []
+		},
 		"miniprogram": {
 			"current": -1,
 			"list": [
@@ -30,10 +33,10 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 1,
 					"name": "gankhistory",
 					"pathName": "pages/gankhistory/gankhistory",
-					"query": ""
+					"query": "name=allen"
 				}
 			]
 		}
